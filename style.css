@@ -7,14 +7,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html{
+html, body{
   height: 100vh;
+  overflow-x:hidden;
 }
 
 body {
   background-color: #eceff1;
   font-family: sans-serif;
   color: #37474f;
+  position: relative;
 }
 
 header {
@@ -54,7 +56,7 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 88vh;
+  min-height: 84vh;
 }
 .container {
   max-width: 80vh;

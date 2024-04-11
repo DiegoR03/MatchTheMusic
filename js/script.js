@@ -1,7 +1,7 @@
 // Source:
 // https://bitbucket.org/james-schneider/drag-and-drop-api-matching-game/src/master/
 
-const draggableListItems = document.querySelectorAll('.draggable-list li');
+const draggableListItems = document.querySelectorAll('.draggable-list li img');
 const endMessage = document.getElementById('endMessage');
 const game = document.getElementById('game');
 
@@ -17,16 +17,6 @@ let matchingCounter = 0;
 addEventListeners();
 
 window.onload = Randomise();
-
-document.getElementById("musician1").addEventListener("contextmenu", function(event) {
-  event.preventDefault();
-});
-document.getElementById("musician2").addEventListener("contextmenu", function(event) {
-  event.preventDefault();
-});
-document.getElementById("musician3").addEventListener("contextmenu", function(event) {
-  event.preventDefault();
-});
 
 function dragStart() {
   selectedId = this.id;
@@ -64,6 +54,13 @@ function dragDrop() {
 
   this.classList.remove('over');
 }
+
+document.getElementById('mobile').oncontextmenu = function(event) {
+  event.preventDefault();
+  event.stopPropagation(); // not necessary in my case, could leave in case stopImmediateProp isn't available? 
+  event.stopImmediatePropagation();
+  return false;
+};
 
 
 function checkForInstrument(selected, dropTarget) {
