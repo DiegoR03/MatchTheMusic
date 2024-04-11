@@ -7,6 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html{
+  height: 100vh;
+}
+
 body {
   background-color: #eceff1;
   font-family: sans-serif;
@@ -14,13 +18,14 @@ body {
 }
 
 header {
-  height: 12vh;
+  height: 16vh;
 }
 
 h3, p {
   margin-bottom: 1.5%;
   text-align: center;
-  font-size: 2vh;
+  font-size: 1.9vh;
+  padding: 1vh;
 }
 
 h2 {
@@ -30,8 +35,9 @@ h2 {
 }
 
 h1 {
+  padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3.5vh;
   color: #e3c94a;
 }
 
@@ -44,15 +50,18 @@ main{
 /* https://bitbucket.org/james-schneider/drag-and-drop-api-matching-game/src/master/ */
 
 .background{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   min-height: 88vh;
 }
 .container {
-  max-width: 960px;
+  max-width: 80vh;
   height: 100%;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
+  grid-gap: 5vh;
 }
 
 .draggable-list {
@@ -72,14 +81,13 @@ main{
 .container li {
   list-style: none;
   padding: 10px;
-  margin-left: 35%;
   margin-bottom: 7%;
-  margin-top: 10%;
+  margin-top: 6.5vh;
   background-color: #cfd8dc;
   border: 1px solid #b0bec5;
   color: #263238;
   cursor: grab;
-  width: 20vh;
+  width: 18vh;
   height: auto;
 }
 
@@ -150,10 +158,11 @@ button:hover {
   align-items: center;
   padding: 8vh;
   justify-content: center;
-  height: 88vh;
   min-height: 44vw;
   background: #cfd8dc;
   font-size: 1.7vh;
+  flex-direction:row;
+  flex-wrap: wrap;
 }
 .wrapper{
   min-width: 40vh;
@@ -259,7 +268,7 @@ header .current-date{
   font-size: 1vw;
   margin: 3.2vw;
   text-decoration: none;
-  position:fixed;
+  position: absolute;
   cursor: pointer;
   display: inline-block;
   border-radius: 4px;
@@ -280,6 +289,7 @@ header .current-date{
 .list {
   position: relative;
   margin-left: 2%;
+  margin-top: 2%;
 }
 .list h2 {
   color: #c4b152;
