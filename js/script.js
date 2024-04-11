@@ -18,7 +18,13 @@ addEventListeners();
 
 window.onload = Randomise();
 
-document.getElementById("musicianlist").addEventListener("contextmenu", function(event) {
+document.getElementById("musician1").addEventListener("contextmenu", function(event) {
+  event.preventDefault();
+});
+document.getElementById("musician2").addEventListener("contextmenu", function(event) {
+  event.preventDefault();
+});
+document.getElementById("musician3").addEventListener("contextmenu", function(event) {
   event.preventDefault();
 });
 
