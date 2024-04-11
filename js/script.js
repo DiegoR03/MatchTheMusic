@@ -18,6 +18,10 @@ addEventListeners();
 
 window.onload = Randomise();
 
+document.getElementById("musicianlist").addEventListener("contextmenu", function(event) {
+  event.preventDefault();
+});
+
 function dragStart() {
   selectedId = this.id;
 }

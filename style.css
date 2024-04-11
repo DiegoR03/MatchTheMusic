@@ -86,16 +86,14 @@ main{
   background-color: #cfd8dc;
   border: 1px solid #b0bec5;
   color: #263238;
-  cursor: grab;
+  cursor: move;
   width: 18vh;
   height: auto;
-  pointer-events: none;
 }
 
 .container li img{
   width: 100%;
   height: auto;
-  pointer-events: none;
 }
 
 .over {
