@@ -62,7 +62,6 @@ main{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vh;
-  -webkit-touch-callout: none;
 }
 
 .draggable-list {
@@ -90,13 +89,13 @@ main{
   cursor: grab;
   width: 18vh;
   height: auto;
-  -webkit-touch-callout: none;
+  pointer-events: none;
 }
 
 .container li img{
   width: 100%;
   height: auto;
-  -webkit-touch-callout: none;
+  pointer-events: none;
 }
 
 .over {
