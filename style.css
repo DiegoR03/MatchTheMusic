@@ -1,0 +1,337 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #eceff1;
+  font-family: sans-serif;
+  color: #37474f;
+}
+
+header {
+  height: 12vh;
+}
+
+h3, p {
+  margin-bottom: 1.5%;
+  text-align: center;
+  font-size: 2vh;
+}
+
+h2 {
+  padding-top: 1%;
+  text-align: center;
+  font-size: 3vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vh;
+  color: #e3c94a;
+}
+
+main{
+  background-color: #cfd8dc;
+  min-height: 100vh;
+}
+
+/* Source: */
+/* https://bitbucket.org/james-schneider/drag-and-drop-api-matching-game/src/master/ */
+
+.background{
+  min-height: 88vh;
+}
+.container {
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.draggable-list {
+  padding: 5px;
+  width: 80%;
+}
+
+.nextdraggable-list {
+  padding: 5px;
+  width: 80%;
+}
+
+.dropped-list {
+  padding: 5px;
+}
+
+.container li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 35%;
+  margin-bottom: 7%;
+  margin-top: 10%;
+  background-color: #cfd8dc;
+  border: 1px solid #b0bec5;
+  color: #263238;
+  cursor: grab;
+  width: 20vh;
+  height: auto;
+}
+
+.container li img{
+  width: 100%;
+  height: auto;
+}
+
+.over {
+  background-color: #90a4ae;
+}
+
+
+table {
+  max-width:640px;
+  margin: auto;
+  margin-bottom: 20px;
+  /* border: 1px solid #b0bec5; */
+}
+
+th, td {
+  padding: 10px 10px;
+}
+
+td {
+  border: 1px solid #90a4ae;
+}
+
+tr:nth-child(even) {
+  background-color: #cfd8dc;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.clickable {
+  width: 20vh;
+  height: 5vh;
+  margin: auto;
+  margin-top: 2em;;
+  margin-bottom: 2em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.7vh;
+  border-radius: 4px;
+  border: none;
+  background-color: #e3c94a;
+  color: #000;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #516a75;
+}
+
+#endMessage {
+  display: none;
+}
+
+/* Agenda */
+/* Source: */
+/* https://www.sliderrevolution.com/resources/html-calendar/ */
+
+.agenda{
+  display: flex;
+  align-items: center;
+  padding: 8vh;
+  justify-content: center;
+  height: 88vh;
+  min-height: 44vw;
+  background: #cfd8dc;
+  font-size: 1.7vh;
+}
+.wrapper{
+  min-width: 40vh;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  font-size: 2vh;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+.wrapper h2{
+  font-size: 3vh;
+}
+
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 2vh;
+  width: 2vh;
+  margin: 0 1vh;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9vh;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  width: auto;
+  font-size: 3vh;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  min-width: 35vh;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.8vh;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+  font-size: 1.5vh;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 4vh;
+  width: 4vh;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vh;
+}
+.days li.active::before{
+  background: #e3c94a;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+/* Home button */
+.home {
+  width: 4vh;
+  font-size: 1vw;
+  margin: 3.2vw;
+  text-decoration: none;
+  position:fixed;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.home img {
+  width: 3vw;
+  height: 3vw;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* List */
+.list {
+  position: relative;
+  margin-left: 2%;
+}
+.list h2 {
+  color: #c4b152;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 2vh;
+}
+.list ul {
+  position: relative;
+}
+.list ul li {
+  width: 30vh;
+  min-width: 10vh;
+  position: relative;
+  left: 0;
+  color: #4e4e4e;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #e3c94a;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.6vh;
+}
+.list ul li:hover {
+  left: 10px;
+}
+.list ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li:hover span {
+  color: #111;
+}
+.list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e3c94a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.list ul li:hover:before {
+  transform: scaleX(1);
+}
+

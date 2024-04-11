@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round 2</title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="home" href="index.html"><img src="img/icons/home.png" alt="Home Icon"></a>
+        <h1>Musician Matching Game</h1>
+        <p>Drag the musician over to the correct instrument!</p>
+    </header>
+
+  <main>
+    <h1>Round 2</h1>
+    <section id="game" class="container">
+        <ul id="instrumentlist" class="draggable-list">
+          <li id="musician1" draggable="true"><img src="img/instruments/GuitarLoeta.png" alt="Loeta's Guitar"></li>
+          <li id="musician2" draggable="true"><img src="img/instruments/PianoDiego.jpg" alt="Diego's Piano"></li>
+          <li id="musician3" draggable="true"><img src="img/instruments/GuitarIngmar.jpg" alt="Ingmar's Guitar"></li>
+        </ul>
+        <ul id="musicianlist" class="draggable-list">
+          <li id="instrument2" draggable="true"><img src="img/musicians/Diego.jpg" alt="Musician Diego"></li>
+          <li id="instrument3" draggable="true"><img src="img/musicians/Ingmar.jpg" alt="Musician Ingmar"></li>
+          <li id="instrument1" draggable="true"><img src="img/musicians/Loeta.jpeg" alt="Musician Loeta"></li>
+        </ul>
+    </section>
+
+    <div id="endMessage">
+      <h2>Well done!</h2>
+      <section id="game" class="container">
+        <ul id="musicianlist">
+          <li id="instrument2"><img src="img/musicians/Diego.jpg" alt="Musician Diego"></li>
+          <li id="instrument3"><img src="img/musicians/Ingmar.jpg" alt="Musician Ingmar"></li>
+          <li id="instrument1"><img src="img/musicians/Loeta.jpeg" alt="Musician Loeta"></li>
+        </ul>
+      </section>
+
+      <section class="buttons">
+        <a class="clickable" href="round1.html" style="text-decoration: none;">Play Again</a>
+        <a class="clickable" href="calendar.html" style="text-decoration: none;">Check the calendar!</a>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
