@@ -97,6 +97,7 @@ main{
   height: auto;
   position: relative;
   -webkit-touch-callout: none;
+  pointer-events: none;
 }
 
 .over {
