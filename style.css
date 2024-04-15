@@ -95,6 +95,8 @@ main{
 .container li img{
   width: 100%;
   height: auto;
+  position: relative;
+  -webkit-touch-callout: none;
 }
 
 .over {

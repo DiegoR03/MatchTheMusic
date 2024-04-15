@@ -21,7 +21,6 @@ window.onload = Randomise();
 
 function dragStart() {
   selectedId = this.id;
-  touchMoveEvent.preventDefault()
 }
 
 function dragEnter() {
@@ -129,3 +128,6 @@ function Randomise(){
     ul.appendChild(ul.children[Math.random()*i|0])
   }    
 }
+
+
+
