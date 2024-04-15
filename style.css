@@ -90,6 +90,7 @@ main{
   cursor: move;
   width: 18vh;
   height: auto;
+  pointer-events:all;
 }
 
 .container li img{
@@ -97,6 +98,7 @@ main{
   height: auto;
   position: relative;
   -webkit-touch-callout: none;
+  pointer-events: none;
 }
 
 .over {
