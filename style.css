@@ -7,21 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html, body{
-  height: 100vh;
-  overflow-x:hidden;
-}
-
-body {
-  background-color: #eceff1;
-  font-family: sans-serif;
-  color: #37474f;
-}
-
-header {
-  height: 16vh;
-}
-
 h3, p {
   margin-bottom: 1.5%;
   text-align: center;
@@ -43,8 +28,41 @@ h1 {
 }
 
 main{
-  background-color: #cfd8dc;
+  background-color: #f79253;
   min-height: 100vh;
+}
+
+html, body{
+  height: 100vh;
+  overflow-x:hidden;
+}
+
+body {
+  background-color: #f79253;
+  font-family: sans-serif;
+  color: #37474f;
+}
+
+header {
+  height: 16vh;
+  background-color: #f79253;
+}
+
+.mobile { display: none }
+@media (max-width: 640px) {
+    .mobile { display: block }
+    .desktop { display: none }
+}
+
+/* Text */
+
+.green {
+  color: #10713a;
+  margin-top: 4vh;
+}
+
+.black {
+  color: #000;
 }
 
 /* Source: */
@@ -57,7 +75,6 @@ main{
   text-align: center;
   min-height: 84vh;
 }
-
 .container {
   max-width: 80vh;
   height: 100%;
@@ -96,8 +113,6 @@ main{
 .container li img{
   width: 100%;
   height: auto;
-  position: relative;
-  -webkit-touch-callout: none;
 }
 
 .over {
@@ -135,13 +150,15 @@ tr:nth-child(even) {
   margin-top: 2em;;
   margin-bottom: 2em;
   cursor: pointer;
-  display: inline-block;
+  justify-content: center;
+  display: flex;
+  text-align: center;
   padding: 10px;
   font-size: 1.7vh;
   border-radius: 4px;
   border: none;
-  background-color: #e3c94a;
-  color: #000;
+  background-color: #10713a;
+  color: #c1d82f;
   text-decoration: none;
 }
 
@@ -264,6 +281,29 @@ header .current-date{
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;
+}
+
+/* Home button */
+.home {
+  width: 4vh;
+  font-size: 1vw;
+  margin: 3.2vw;
+  text-decoration: none;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.home img {
+  width: 3vw;
+  height: 3vw;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 /* List */
