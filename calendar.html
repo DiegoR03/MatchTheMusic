@@ -12,48 +12,50 @@
   </head>
 
   <body>
-    <img class="mobile" src="img/icons/LogoBig.png" width="100%" height="auto">
-    <img class="desktop" src="img/icons/LogoSmall.png" width="100%" height="auto">
-    <<img class="gameTitle" src="img/icons/words/agenda.png" alt="Agenda Icon">>
-    <div class="agenda">
-    <section class="wrapper">
-      <header>
-        <p class="current-date"></p>
-        <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
+    <header class="gameheader">
+      <img class="mobile" src="img/icons/LogoBig.png" width="100%" height="auto">
+      <img class="desktop" src="img/icons/LogoSmall.png" width="100%" height="auto">
+    </header>
+
+    <main class="agenda">
+      <section class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+  
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
         </div>
-      </header>
-
-      <div class="calendar">
-        <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
+      </section>
+  
+      <section class="list">
+        <h2 class="planning">Planned Meets</h2>
+        <ul>
+          <li><span>[Piano] 14 April | 09:00 - 10:00</span></li>
+          <li><span>[Guitar] 16 April | 09:00 - 10:00</span></li>
+          <li><span>[Flute] 17 April | 09:00 - 10:00</span></li>
+          <li><span>[Saxophone] 21 April | 09:00 - 10:00</span></li>
+          <li><span>[Guitar] 23 April | 09:00 - 10:00</span></li>
+          <li><span>[Piano] 28 April | 09:00 - 10:00</span></li>
+          <li><span>[Piano] 29 April | 09:00 - 10:00</span></li>
+          <li><span>[Flute] 29 April | 09:00 - 10:00</span></li>
+          <li><span>[Drums] 1 May | 09:00 - 10:00</span></li>
         </ul>
-        <ul class="days"></ul>
-      </div>
-    </section>
-
-    <section class="list">
-      <h2 class="planning">Planned Meets</h2>
-      <ul>
-        <li><span>[Piano] 14 April | 09:00 - 10:00</span></li>
-        <li><span>[Guitar] 16 April | 09:00 - 10:00</span></li>
-        <li><span>[Flute] 17 April | 09:00 - 10:00</span></li>
-        <li><span>[Saxophone] 21 April | 09:00 - 10:00</span></li>
-        <li><span>[Guitar] 23 April | 09:00 - 10:00</span></li>
-        <li><span>[Piano] 28 April | 09:00 - 10:00</span></li>
-        <li><span>[Piano] 29 April | 09:00 - 10:00</span></li>
-        <li><span>[Flute] 29 April | 09:00 - 10:00</span></li>
-        <li><span>[Drums] 1 May | 09:00 - 10:00</span></li>
-      </ul>
-    </section>
-    <script src="js/calendar.js" defer></script>
-  </div>
+      </section>
+      <script src="js/calendar.js" defer></script>
+    </main>
   </body>
 </html>
