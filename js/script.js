@@ -41,11 +41,11 @@ function dragDrop() {
 
   if (checkForInstrument(selectedId, dropTargetId)) {
     document.getElementById(selectedId).style.display = 'none';
-    document.getElementById(dropTargetId).style.display = 'none';
+    document.getElementById(dropTargetId).style.backgroundColor = 'lime';
     matchingCounter++;
   } else if (checkForMusician(selectedId, dropTargetId)) {
     document.getElementById(selectedId).style.display = 'none';
-    document.getElementById(dropTargetId).style.display = 'none';
+    document.getElementById(dropTargetId).style.backgroundColor = 'lime';
     matchingCounter++;
   }
 

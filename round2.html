@@ -4,47 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Round 2</title>  
+  <title>Round 1</title>  
+  <link rel="shortcut icon" href="img/icons/note.webp" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img class="desktop" src="img/icons/LogoSmall.png" width="100%" height="auto">
-        <h1>Round 2</h1>
+  <header class="gameheader">
+      <img class="mobile" src="img/icons/LogoBig.png" alt="Big Logo" width="100%" height="auto">
+      <img class="desktop" src="img/icons/LogoSmall.png" alt="Smaller Logo" width="100%" height="auto"> 
+      <img class="gameTitle" src="img/icons/words/ronde2.png" alt="Ronde 2 Icon">
     </header>
 
-  <main class="background">
+  <main class="gamemain">
     <section id="game" class="container">
         <ul id="instrumentlist" class="draggable-list">
-          <li id="musician1" draggable="true"><img src="img/instruments/GuitarLoeta.png" alt="Loeta's Guitar"></li>
-          <li id="musician2" draggable="true"><img src="img/instruments/PianoDiego.jpg" alt="Diego's Piano"></li>
-          <li id="musician3" draggable="true"><img src="img/instruments/GuitarIngmar.jpg" alt="Ingmar's Guitar"></li>
+          <li class="btn" id="musician1" draggable="true"><img src="img/instruments/BasMariska.jpg" alt="Mariska's Bas"><audio controls><source src="audio/MariskaBas.mp3"></audio></li>
+          <li class="btn" id="musician2" draggable="true"><img src="img/instruments/KazooTies.png" alt="Ties' Kazoo"><audio controls><source src="audio/TiesKazoo.mp3"></audio></li>
+          <li class="btn" id="musician3" draggable="true"><img src="img/instruments/PianoTess.jpeg" alt="Tess' Piano"><audio controls><source src="audio/TessaPiano.mp3"></audio></li>
         </ul>
         <ul id="musicianlist" class="draggable-list">
-          <li id="instrument2" draggable="true"><img src="img/musicians/Diego.jpg" alt="Musician Diego"></li>
-          <li id="instrument3" draggable="true"><img src="img/musicians/Ingmar.jpg" alt="Musician Ingmar"></li>
-          <li id="instrument1" draggable="true"><img src="img/musicians/Loeta.jpeg" alt="Musician Loeta"></li>
+          <li id="instrument2" draggable="true"><img src="img/musicians/Ties.png" alt="Musician Ties"><a class="musicianbtn" onclick="onmusician2()"><i class="arrowdown"></i></a></li>
+          <li id="instrument3" draggable="true"><img src="img/musicians/Tess.jpeg" alt="Musician Tess"><a class="musicianbtn" onclick="onmusician3()"><i class="arrowdown"></i></a></li>
+          <li id="instrument1" draggable="true"><img src="img/musicians/Mariska.jpg" alt="Musician Mariska"><a class="musicianbtn" onclick="onmusician1()"><i class="arrowdown"></i></a></li>
         </ul>
     </section>
 
-    <div id="endMessage">
-      <h2>Well done!</h2>
-      <section id="game" class="container">
-        <ul id="musicianlist">
-          <li id="instrument2"><img src="img/musicians/Diego.jpg" alt="Musician Diego"></li>
-          <li id="instrument3"><img src="img/musicians/Ingmar.jpg" alt="Musician Ingmar"></li>
-          <li id="instrument1"><img src="img/musicians/Loeta.jpeg" alt="Musician Loeta"></li>
-        </ul>
-      </section>
+    <section class="overlay" id="overlaym1" onclick="offmusician1()">
+      <img class="overlayimage" src="img/musicians/Mariska.jpg" alt="Musician Mariska">
+      <p class="overlaytext"></p>
+      <p class="smalloverlaytext">Klik ergens op het scherm om de overlay af te sluiten</p>
+    </section>
 
-      <section class="buttons">
-        <a class="clickable" href="round1.html" style="text-decoration: none;">Play Again</a>
-        <a class="clickable" href="calendar.html" style="text-decoration: none;">Calendar</a>
-      </section>
-    </div>
+    <section class="overlay" id="overlaym2" onclick="offmusician2()">
+      <img class="overlayimage" src="img/musicians/Ties.png" alt="Musician Ties">
+      <p class="overlaytext">"Muziek is belangrijk voor mij aangezien ik zo mijn gevoelens kan uitten"</p>
+      <p class="smalloverlaytext">Klik ergens op het scherm om de overlay af te sluiten</p>
+    </section>
+
+    <section class="overlay" id="overlaym3" onclick="offmusician3()">
+      <img class="overlayimage" src="img/musicians/Tess.jpeg" alt="Musician Tess">
+      <p class="overlaytext">"Ik vind dat her veel emoties in je naar boven kan brengen en kan er van genieten m’n nieuwe dingen te leren"</p>
+      <p class="smalloverlaytext">Klik ergens op het scherm om de overlay af te sluiten</p>
+    </section>
+
+    <section id="endMessage">
+      <p class="title">Lekker bezig<p>
+      <p class="blacktext">Je hebt Ronde 2 voltooid, je hebt het spel uitgespeeld!</p>
+      <ul class="row">
+        <li class="imagerow"><img src="img/musicians/Mariska.jpg" alt="Musician Mariska"></li>
+        <li class="imagerow"><img src="img/musicians/Ties.png" alt="Musician Ties"></li>
+        <li class="imagerow"><img src="img/musicians/Tess.jpeg" alt="Musician Tess"></li>
+      </ul>
+
+      <a class="normalbtn" href="index.html" ><img src="img/icons/words/home.png" alt="Home Button"></a>
+
+      <p class="greentext">Wil jij deze muzikanten ontmoeten?</p>
+      <p class="blacktext">Of ontmoet muzikanten op een van de music meets hier bij CMD. Neem je instrument mee en jam met je mede-muzikanten. Kom gerust een keertje langs, of je wel of niet een instrument speelt; je bent altijd welkom!</p>
+      <p class="blacktext">Check de agenda om te zien wanneer de volgende music meet is</p>
+
+      <a class="normalbtn" href="calendar.html"><img src="img/icons/words/agenda.png" alt="Agenda Button"></a>
+    </section>
   </main>
-
   <script src="js/script.js"></script>
-
+  <script src="js/overlayronde2.js"></script>
 </body>
 </html>
