@@ -140,10 +140,10 @@ function absorbEvent_(event) {
 }
 
 function preventLongPressMenu(node) {
-  node.ontouchstart = absorbEvent_;
-  node.ontouchmove = absorbEvent_;
-  node.ontouchend = absorbEvent_;
-  node.ontouchcancel = absorbEvent_;
+  node.ontouchstart = node.onclick;
+  node.ontouchmove = node.onclick;
+  node.ontouchend = node.onclick;
+  node.ontouchcancel = node.onclick;
 }
 
 function init() {
