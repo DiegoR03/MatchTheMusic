@@ -50,7 +50,7 @@ h1 {
 }
 
 audio {
-  width: 15vh;
+  width: 16vh;
   height: 5vh;
   margin: auto;
   margin-top: -1.5em;
@@ -59,7 +59,7 @@ audio {
   display: flex;
   text-align: center;
   position: relative;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.7vh;
   border: none;
   color: #c1d82f;
