@@ -130,6 +130,7 @@ function Randomise(){
   }    
 }
 
+// Prevent Android from opening photo
 function absorbEvent_(event) {
   var e = event || window.event;
   e.preventDefault && e.preventDefault();
@@ -155,8 +156,20 @@ function init() {
   preventLongPressMenu(document.getElementById('instrument3'));
 }
 
+// Default context menu prevented
 window.oncontextmenu = function(event) {
   event.preventDefault();
   event.stopPropagation();
   return false;
 };
+
+// Prevent Iphone from opening photo
+window.addEventListener("dragover",function(e){
+  e = e || event;
+  e.preventDefault();   
+},false);
+window.addEventListener("drop",function(e){
+  e = e || event;
+  e.preventDefault();   
+},false);
+
