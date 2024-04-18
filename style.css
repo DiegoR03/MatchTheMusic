@@ -411,7 +411,7 @@ button:hover {
   font-size: 1.7vh;
   flex-direction:row;
   flex-wrap: wrap;
-  height: 95vh;;
+  height: 100vh;
 }
 .wrapper{
   min-width: 40vh;
