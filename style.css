@@ -277,6 +277,22 @@ body {
   text-decoration: none;
 }
 
+.innerimg {
+  width: 20vh;
+  height: auto;
+  margin: auto;
+  margin-top: -1em;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: 1.7vh;
+  border: none;
+  text-decoration: none;
+}
+
 .musicianbtn {
   width: 4.1vh;
   height: 4.1vh;
